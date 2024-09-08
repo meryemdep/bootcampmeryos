@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*element sectik */
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        /*class */
+        .favori {
+            border-left: 10px solid rgb(41, 5, 41);
+
+        }
+
+        /* id */
+        #memleket {
+            text-align: center;
+        }
+
+        div>p {
+            margin: 0 60px;
+            text-align: justify;
+            font-size: 80%;
+        }
+
+        div p {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        h1,
+        h2 {
+            background-color: black;
+            color: white;
+        }
+
+        [title] {
+            background-color: yellowgreen;
+        }
+
+        li[title] {
+            font-style: italic;
+        }
+        h2+p {
+            text-indent: 40px;
+        }
+        /* odd ya da 2n+1 tek sayilari secer */
+        li:nth-child(odd) {
+            background-color: aliceblue;
+        }
+        li:nth-child(6) {
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            font-style: italic;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Turkiye</h1>
+    <h2>Kutahya</h2>
+    <p>Kütahya (Latince: Cotyaeum), Ege Bölgesi'nde yer alan Kütahya ilinin merkezi olan şehirdir. Kütahya bölgesi,
+        kuzey ve batıdaki yüksek dağ sırtlarında doruğa ulaşan tarım arazileri ile geniş bir yamaç alanına sahiptir.</p>
+    <p>
+        Kuruluş tarihi kesin olarak tespit edilememekle beraber, tarihi MÖ 3000 yıllarına uzanmaktadır. Eski kaynaklara
+        göre, Kütahya'nın antik çağlardaki adı Kotiaeon, Cotiaeum ve Koti şeklinde geçmektedir. İl topraklarına yerleşen
+        en eski halk Friglerdir.
+    </p>
+    <div>
+        <p>
+            Nasuhoğlu Nasuh'un öldükten sonra bıraktıkları satılarak mevcudu on bir bin kuruş ve büyük-küçük hayvanların
+            bedelleri yirmi dört bin kuruş tutmuştur ve zamanına göre epey bir servettir.
+        </p>
+        <section>
+            <p>kütahya <span
+                    title="beyaz kil bir gövdenin yüksek sıcaklıklarda pişirilmesiyle yapılan bir seramik türüdür.">porselen</span>
+                cok iyi</p>
+        </section>
+    </div>
+    <h3>İlçeleri</h3>
+    <ul>
+        <li>merkez</li>
+        <li>altintas</li>
+        <li>aslanapa</li>
+        <li title="dikkat antikkent icerir.">cavdarhisar</li>
+        <li class="favori">domanic</li>
+        <li>dumlupinar</li>
+        <li>emet</li>
+        <li>gediz</li>
+        <li>hisarcik</li>
+        <li>pazarlar</li>
+        <li class="favori">simav</li>
+        <li>saphane</li>
+        <li id="memleket" class="favori">tavsanli</li>
+    </ul>
+
+
+
+
+</body>
+
+</html>
