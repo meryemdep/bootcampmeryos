@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sozde Element</title>
+    <style>
+        body {
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        p::first-letter {
+            font-size: 3em;
+            float: left;
+            line-height: .75;
+            font-weight: bold;
+        }
+
+        P::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        main {
+            background-color: #D9AFD9;
+            background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
+            color: rgb(57, 4, 4);
+            max-width: 600px;
+            margin: 40px auto 0;
+            padding: 36px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 20px black, 0 0 60px #040113 inset;
+        }
+
+        @media (max-width: 720px) {
+            main {
+                margin: 40px;
+            }
+        }
+
+        p::first-line {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit tenetur soluta impedit ad mollitia
+            error, enim nam debitis natus minus reiciendis. Consequuntur nisi at animi eius fuga necessitatibus
+            accusantium!</p>
+        <p>Dolor laboriosam, in, dignissimos non minus rerum maiores sed, commodi doloribus obcaecati suscipit facere.
+            Facilis itaque aspernatur iste natus repudiandae labore quidem ducimus quam quae? Quasi facilis laborum sit
+            similique!</p>
+        <p>Illum autem, maxime, alias neque vero adipisci necessitatibus mollitia dicta quisquam doloribus totam at.
+            Mollitia sapiente dolores iusto neque a error, aliquam, harum accusamus aliquid est, quae natus repudiandae
+            iste.</p>
+        <p>Dolor assumenda sit perspiciatis, distinctio corrupti illo consequatur eligendi fugiat? Ab maxime ratione
+            mollitia, ipsum qui id sit, itaque possimus, reprehenderit officiis voluptatibus dolor hic atque praesentium
+            quis! Officia, rerum!</p>
+    </main>
+</body>
+
+</html>
