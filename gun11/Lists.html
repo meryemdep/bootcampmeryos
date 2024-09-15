@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        h4 {
+            margin-bottom: 0;
+        }
+
+        ul {
+            margin-top: 5px;
+        }
+
+        .still1 {
+            list-style: none;
+        }
+
+        .still2 {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .still3 {
+            list-style-type: armenian;
+        }
+
+        .still4 {
+            /*list-style-position: outside;*/
+        }
+
+        ul.still4>li {
+            border: 1px solid black;
+        }
+
+        ul.still5>li {
+            border: 1px solid black;
+        }
+
+        ul.still6 {
+            list-style-image: url(pikacucu.png);
+        }
+
+        ul.still7>li::marker {
+            color: brown;
+            font-size: 2em;
+        }
+        ul.still8 {
+            list-style: none;
+            padding: 0;
+            border: 1px solid pink;
+            border-radius:  8px;
+            overflow: hidden;
+        }
+        ul.still8>li {     
+         border-bottom: 2px solid pink;
+            padding: 12px;
+        }
+        ul.still8>li:last-child { 
+            border-bottom: none;
+            
+        }
+        ul.still8>li:nth-child(2n) {
+            background-color: #f0f0f0;
+        }
+        ul.still8>li:hover {
+            background-color: brown;
+            color: pink;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Extravaganza Baby Shbaby Chibi Chibi Chaba Chaba Dubi Dubi</h1>
+    <ul class="still8">
+        <li>Cag kebab</li>
+        <li>Lahmacun</li>
+        <li>Doner durum</li>
+        <li>Brokoli</li>
+        <li>Fettunice</li>
+    </ul>
+    <h1>Marker ozellestirme</h1>
+    <ul class="still7">
+        <li>Cag kebab</li>
+        <li>Lahmacun</li>
+        <li>Doner durum</li>
+        <li>Brokoli</li>
+        <li>Fettunice</li>
+    </ul>
+    <h1>Marker resmi</h1>
+    <ul class="still6">
+        <li>Cag kebab</li>
+        <li>Lahmacun</li>
+        <li>Doner durum</li>
+        <li>Brokoli</li>
+        <li>Fettunice</li>
+    </ul>
+    <h1>Marker pozisyonlari ic</h1>
+    <ul class="still5">
+        <li>Cag kebab</li>
+        <li>Lahmacun</li>
+        <li>Doner durum</li>
+        <li>Brokoli</li>
+        <li>Fettunice</li>
+    </ul>
+    <h4>Marker pozisyonlari</h4>
+    <ul class="still4">
+        <li>Cag kebab</li>
+        <li>Lahmacun</li>
+        <li>Doner durum</li>
+        <li>Brokoli</li>
+        <li>Fettunice</li>
+    </ul>
+    <h4>List Still Tipi</h4>
+    <ul class="still3">
+        <li>Cag kebab</li>
+        <li>Lahmacun</li>
+        <li>Doner durum</li>
+        <li>Brokoli</li>
+        <li>Fettunice</li>
+    </ul>
+    <h4>Stillerinden Arindirilmis</h4>
+    <ul class="still2">
+        <li>Cag kebab</li>
+        <li>Lahmacun</li>
+        <li>Doner durum</li>
+        <li>Brokoli</li>
+        <li>Fettunice</li>
+    </ul>
+    <h4>Marker'siz Liste</h4>
+    <ul class="still1">
+        <li>Cag kebab</li>
+        <li>Lahmacun</li>
+        <li>Doner durum</li>
+        <li>Brokoli</li>
+        <li>Fettunice</li>
+    </ul>
+    <h4>Standart Gorunum</h4>
+    <ul>
+        <li>Cag kebab</li>
+        <li>Lahmacun</li>
+        <li>Doner durum</li>
+        <li>Brokoli</li>
+        <li>Fettunice</li>
+    </ul>
+
+
+</body>
+
+</html>
