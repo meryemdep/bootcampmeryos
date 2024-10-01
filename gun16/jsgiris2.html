@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Bolgeleri</title>
+</head>
+<body>
+    <h1>JS Giris 2</h1>
+    <p>Bir HTML dokumaninda Javascripti 3 farkli sekilde dokumana dahil edebiliriz.</p>
+    <script>
+        let x = 2+2;
+        document.write("<hr>")
+        document.write(x);
+    </script>
+    <!-- Harici dosya ile dahil etme -->
+     <script src="kod.js"></script>
+     <hr>
+     <!-- inline js -->
+     <button onclick="alert('I SAID DO NOT!')">DO NOT TOUCH ME</button>
+<hr>
+<button id="bocek" onmouseenter="document.getElementById('bocek').textContent = 'hatirladim' ">HATIRLADIN MI LAN BENI</button>
+    
+</body>
+</html>

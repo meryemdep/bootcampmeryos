@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jellyfishes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f1f1f1;
+            font-family: "Raleway", sans-serif;
+
+        }
+
+        mark {
+            background-color: black;
+            color: white;
+            padding: .2rem .5rem;
+        }
+
+        header {
+            padding: 2rem;
+            text-align: center;
+            margin: 2rem 0 3rem 0;
+        }
+
+        header>h1 {
+            margin-top: 0;
+            text-transform: uppercase;
+
+        }
+
+
+        main {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .col1 {
+
+            flex: 2;
+            margin: 0 1rem;
+        }
+
+        .col2 {
+            flex: 1;
+            margin: 0 1rem;
+        }
+
+        .yazi1 {
+            padding: 10px;
+        }
+
+        .baslik1 {
+            margin: 0;
+            padding: auto;
+            border: 0;
+        }
+.list1 {
+ margin-left: 10px;
+    list-style-type: none;
+    background-color: #f4f4f4;
+}
+.jellobaslik {
+    background-color: #f4f4f4;
+}
+
+        .box {
+            background-color: white;
+            margin-bottom: 2rem;
+            min-height: 150px;
+            /*silcez*/
+            box-shadow: rgba(6, 6, 79, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(1, 16, 31, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        footer {
+            min-height: 80px;
+            /*sil*/
+            background-color: #312f4c;
+            margin-top: 1rem;
+        }
+
+        /*990 yap */
+        @media (max-width: 600px) {
+            main {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>About Jellyfish</h1>
+        <div class="site-desc"> Welcome to the blog of <mark>Jellyfish</mark></div>
+    </header>
+    <main>
+        <div class="col1">
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="col2">
+            <div class="box">
+                <img src="denizanasi1.jpg" alt="denizanasi" width="500" height="200">
+                <h1 class="baslik1">What Are They?</h1>
+                <p class="yazi1">A <strong>jellyfish</strong> is a soft-bodied, transparent sea creature with an
+                    umbrella-shaped body and long, trailing tentacles. It is made mostly of water and uses its tentacles
+                    to sting and capture prey.</p>
+            </div>
+            <div class="box">
+                <ul class="lsting">
+                    <h3 class="jellobaslik">Popular Jellyfish</h3>
+                </ul>
+                <li class="list1">
+                    <img src="moonjelly.jpg" alt="jellymoon" width="50px" height="40px">
+                    <span class="moon"> Moon Jelly</span>
+                </li>
+                <li class="list1"> <img src="lionsmane.jpg" alt="lionsmane" width="50px"><span>Lion's Mane
+                        Jellyfish</span>
+                </li>
+                <li class="list1"> <img src="boxjely.jpg" alt="boxjely" width="50px" height="40px"><span>Box
+                        Jellyfish</span>
+                </li>
+                <li class="list1">
+                    <img src="sonuncu.jpg" alt="resim" width="50px" height="40px">
+                    <span>Portuguese Man o' War (Physalia physalis)</span>
+                </li>
+
+            </div>
+            <div class="box"></div>
+        </div>
+    </main>
+    <footer>sayfanin en alt kismi</footer>
+</body>
+
+</html>

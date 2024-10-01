@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body>
+    <script src="../ortak/yaz.js"></script> <!-- .. koymamizin sebebi bi ust dizini belirtmek istedigimiz icin tek nokta ise bulunudugun dizin olur-->
+
+<script>
+    // dort cesit fonksiyon vardir 1-parametra alinmayan deger dondurmeyen 2- parametre almayan deger donduren 3- parametre alan deger dondurmeyen 4- parametre alan deger donduren 
+
+function ekranaTarihVeSaatiYazdir(){
+    let suAn = new Date ();
+    ciz(suAn.toLocaleString());
+}
+
+ekranaTarihVeSaatiYazdir()
+
+// parametre almayan deger donduren
+function ayinGunu() {
+let suAn = new Date();
+return suAn.getDate();
+    
+}
+let gun = ayinGunu();
+ciz("Bugun ayin " + gun + ".gunudur")
+
+
+
+// parametre alan deger dondurmeyen isci fonksiyonu
+function arkaplaniBoya(renk) {
+    document.body.style.background = renk;
+
+}
+arkaplaniBoya("linear-gradient(to right, #333, #777)");
+
+
+// aldigi sayinin bir fazlasinin dondurur matematikteki f(x)=x+1 gibi
+function birFazlasi(x) {
+return x + 1;
+}
+let sayi = 3;
+sayi = birFazlasi(sayi);
+ciz(sayi);
+
+</script>
+
+</body>
+</html>

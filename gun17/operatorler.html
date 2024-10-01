@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="../ortak/yaz.js"></script>
+    <script>
+        //operator taraflar arasinda belli islemleri yaparak yeni sonuclar urettiren sembollu araclardir
+        // aritmetik operatorpler; - + * / % **
+        yaz(4 + 4);
+        ciz('abidiggubudig')
+        yaz("4" + 4); //44 olur string concatenation
+        let ispat = "4" + 4;
+        yaz(typeof ispat);
+
+        yaz(3 * 4); // carpma izlemi
+
+        yaz("2" * "2"); //carpma islemi taraflarinda sayi ister string varsa once sayiya donusturulur
+        //typeof operatorusagindaki verinin turunu string olarak dondurur
+        //() operatoru metotlari fonksiyonlari cagirmaya (call) yarar
+        ciz();
+  // . operatoru bir nesnenin uyelerine (method/property) erismeyi saglar
+  yaz(document.title);
+  document.title = "sirdan + salgam +dilber dudagi" ;
+  let a = 3; 
+//   a = a + 4 ; //a ya e kleyip a esitle
+  a += 4; //muadili usttekinin
+  yaz(a);
+
+    </script>
+</body>
+
+</html>

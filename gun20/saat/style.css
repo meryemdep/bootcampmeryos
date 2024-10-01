@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html, body { 
+    height: 100%;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eac5dd;
+    color: brown;
+    font-family: "orbitron", sans-serif;
+}
+#saat {
+font-size: 12vw;
+
+}
