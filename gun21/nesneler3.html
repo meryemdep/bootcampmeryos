@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alanhesabi</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-4">dikdortgenin alan hesabi</h1>
+        <div class="mb-3">
+            <label class="form-label" for="gen">genislik</label>
+            <input class="form-control" type="number" id="gen" value="0">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="yuk">yukseklik</label>
+            <input class="form-control" type="number" id="yuk" value="0">
+        </div>
+        <div class="alert alert-info">
+            ozellikleri girilen dikdortgenin alani: <strong><span id="sonuc">0</span>br²</strong>
+        </div>
+    </div>
+    </div>
+
+
+
+    <script>
+        const inputGen = document.getElementById("gen");
+        //idsi gen olani getir
+        const inputYuk = document.getElementById("yuk");
+        const spnSonuc = document.getElementById("sonuc");
+
+        let dikdortgen = {
+            genislik: 0,
+            yukseklik: 0,
+            alan: function () {
+                return this.genislik * this.yukseklik;
+            }
+        }
+        function sonucuGuncelle() {
+            dikdortgen.genislik = inputGen.value;
+            dikdortgen.yukseklik = inputYuk.value;
+            spnSonuc.textContent = dikdortgen.alan();
+
+        }
+
+        inputGen.oninput = sonucuGuncelle;
+        inputYuk.oninput = sonucuGuncelle;
+
+
+    </script>
+</body>
+
+</html>

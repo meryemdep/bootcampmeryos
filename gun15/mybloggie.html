@@ -67,14 +67,29 @@
             padding: auto;
             border: 0;
         }
-.list1 {
- margin-left: 10px;
-    list-style-type: none;
-    background-color: #f4f4f4;
-}
-.jellobaslik {
-    background-color: #f4f4f4;
-}
+
+        .list1 {
+            padding-left: 3%;
+            list-style-type: none;
+            background-color: #f4f4f4;
+        }
+
+        .jellobaslik {
+            background-color: #f4f4f4;
+        }
+
+        .listbaslik {
+            margin-left: 3%;
+            list-style-type: none;
+            background-color: #f4f4f4;
+
+
+        }
+
+        .foto1 {
+            width: 100%;
+            height: 250px;
+        }
 
         .box {
             background-color: white;
@@ -98,6 +113,107 @@
                 gap: 1.5rem;
             }
         }
+
+        li {
+            border: 1px solid #8f8bd1;
+        }
+
+        .dgunu {
+            opacity: 0.4;
+        }
+
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            unicode-bidi: isolate;
+        }
+
+        .sifir {
+            background-color: #000;
+            color: #fff;
+            display: inline-block;
+            padding-left: 8px;
+            padding-right: 8px;
+            text-align: center;
+        }
+
+        .button {
+            font-size: 16px;
+            color: black;
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            background-color: white;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-left: 10px;
+        }
+
+        .button:hover {
+            background-color: #aeadad;
+        }
+
+        .button::after {
+            content: " »";
+            /* Sağ tarafa ok eklemek için */
+        }
+
+        .yerler {
+
+            margin-left: 10px;
+        }
+
+        .siralama {
+            justify-content: space-between;
+        }
+
+
+
+        .tumu>div {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+
+        }
+
+        .a {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+        .button2 {
+            font-size: 16px;
+            color: black;
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            background-color: rgb(102, 101, 101);
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .button2:hover {
+            background-color: #000000;
+            color: rgb(158, 158, 252);
+        }
+
+        .button2::after {
+            content: " »";
+            
+        }
+
+      
     </style>
 </head>
 
@@ -108,8 +224,59 @@
     </header>
     <main>
         <div class="col1">
-            <div class="box"></div>
-            <div class="box"></div>
+            <div class="box">
+                <img class="foto1" src="yenibir.webp" alt="resim">
+                <div>
+                    <h3>I LOVE JELLYFISH</h3>
+                    <h5>I love their jelly arms or things like that. <span class="dgunu"> June,18 2005.</span></h5>
+                </div>
+
+                <div>
+                    <p>They Have No Brain, Heart, or Bones.Jellyfish are incredibly simple creatures. They have no brain
+                        to control their movements, no heart to pump blood, and no bones. Instead, they rely on a
+                        network of nerves called a "nerve net" to detect changes in their environment.
+                    </p>
+                    <p>
+                        <button class="button">READ MORE</button>
+                    </p>
+                    <p class="yerler">
+                        <span><b>comments</b></span>
+                        <span class="sifir">0</span>
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="box">
+                <img class="foto1" src="demure.webp" alt="jellyfish">
+                <div>
+                    <h3>I LOVE JELLYFISH</h3>
+                    <h5>I love their jelly arms or things like that
+                        . <span class="dgunu"> June,18 2005.</span></h5>
+                </div>
+
+                <div>
+                    <p>Jellyfish are among the oldest living creatures on Earth, existing for over 500 million years,
+                        predating even dinosaurs! Some species, like the Turritopsis dohrnii, are even referred to as
+                        "immortal jellyfish" because they have the ability to reverse their life cycle. When injured or
+                        stressed, they can revert their cells to an earlier stage, essentially allowing them to start
+                        their life over again! This makes them one of the few creatures capable of theoretically living
+                        forever.
+                    </p>
+                    <div class="siralama">
+                        <p>
+                            <button class="button">READ MORE</button>
+                        </p>
+                        <p class="yerler">
+                            <span><b>comments</b></span>
+                            <span class="sifir">0</span>
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
         </div>
         <div class="col2">
             <div class="box">
@@ -120,9 +287,12 @@
                     to sting and capture prey.</p>
             </div>
             <div class="box">
-                <ul class="lsting">
-                    <h3 class="jellobaslik">Popular Jellyfish</h3>
-                </ul>
+                <div class="liste">
+                    <h4 class="listbaslik">Popular posts</h4>
+
+                </div>
+
+                <ul class="lsting"> </ul>
                 <li class="list1">
                     <img src="moonjelly.jpg" alt="jellymoon" width="50px" height="40px">
                     <span class="moon"> Moon Jelly</span>
@@ -137,12 +307,38 @@
                     <img src="sonuncu.jpg" alt="resim" width="50px" height="40px">
                     <span>Portuguese Man o' War (Physalia physalis)</span>
                 </li>
+            </div>
+
+        </div>
+        <div class="box">
+            <div>TAGS</div>
+            <div class="tumu">
+
+                <div class="a">Turritopsis</div>
+                <div class="a">Aurelia</div>
+                <div class="a">Chrysaora</div>
+                <div class="a">Cyanea</div>
+                <div class="a">Cassiopea</div>
+                <div class="a">Pelagia</div>
+                <div class="a">Phyllorhiza</div>
+                <div class="a">Nemopilema</div>
+                <div class="a">Rhopilema</div>
+                <div class="a">Catostylus</div>
 
             </div>
-            <div class="box"></div>
+
+
+
+
+        </div>
         </div>
     </main>
-    <footer>sayfanin en alt kismi</footer>
+    <footer>
+
+        <button class="button2">previous</button>
+        <button class="button2">next</button>
+
+    </footer>
 </body>
 
 </html>
