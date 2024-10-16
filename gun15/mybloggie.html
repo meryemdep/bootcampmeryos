@@ -138,6 +138,7 @@
             padding-left: 8px;
             padding-right: 8px;
             text-align: center;
+            margin-top: 10px;
         }
 
         .button {
@@ -181,13 +182,7 @@
 
         }
 
-        .a {
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 5px 10px;
-            margin-right: 10px;
-        }
+        
         .button2 {
             font-size: 16px;
             color: black;
@@ -212,8 +207,33 @@
             content: " »";
             
         }
+        .bottomsection{
+            display: flex;
+            justify-content: space-between;
+        }
+        .section-1{
+            padding: 3%
+        }
 
-      
+    .listcontainer{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    
+      .a {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            margin-right: 10px;
+            margin-bottom: 2%;
+        }
+        .baslik-2 {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -231,18 +251,20 @@
                     <h5>I love their jelly arms or things like that. <span class="dgunu"> June,18 2005.</span></h5>
                 </div>
 
-                <div>
+                <div class="section-1">
                     <p>They Have No Brain, Heart, or Bones.Jellyfish are incredibly simple creatures. They have no brain
                         to control their movements, no heart to pump blood, and no bones. Instead, they rely on a
                         network of nerves called a "nerve net" to detect changes in their environment.
                     </p>
-                    <p>
+                    
+                    <div class="bottomsection">
                         <button class="button">READ MORE</button>
-                    </p>
-                    <p class="yerler">
-                        <span><b>comments</b></span>
+                    
+                    <div class="yerler">
+                        <span class="sifir"><b>comments</b></span>
                         <span class="sifir">0</span>
-                    </p>
+                    </div>
+                </div>
                 </div>
 
 
@@ -311,22 +333,24 @@
 
         </div>
         <div class="box">
-            <div>TAGS</div>
+            <div class="baslik-2">TAGS</div>
             <div class="tumu">
 
-                <div class="a">Turritopsis</div>
-                <div class="a">Aurelia</div>
-                <div class="a">Chrysaora</div>
-                <div class="a">Cyanea</div>
-                <div class="a">Cassiopea</div>
-                <div class="a">Pelagia</div>
-                <div class="a">Phyllorhiza</div>
-                <div class="a">Nemopilema</div>
-                <div class="a">Rhopilema</div>
-                <div class="a">Catostylus</div>
-
+                <ul class="listcontainer">
+                    <li class="a">Turritopsis</li>
+                    <li class="a">Aurelia</li>
+                    <li class="a">Chrysaora</li>
+                    <li class="a">Cyanea</li>
+                    <li class="a">Cassiopea</li>
+                    <li class="a">Pelagia</li>
+                    <li class="a">Phyllorhiza</li>
+                    <li class="a">Nemopilema</li>
+                    <li class="a">Rhopilema</li>
+                    <li class="a">Catostylus</li>
+                </ul>
+                
             </div>
-
+        
 
 
 
